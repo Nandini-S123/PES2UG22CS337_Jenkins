@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o hello_exec main/hello.cpp'
+                sh 'g++ -o hello_exec main/non_existing_file.cpp'
             }
         }
         stage('Test') {
